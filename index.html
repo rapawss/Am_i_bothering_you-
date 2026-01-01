@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>incoming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="music" src="iris.mp3"></audio>
+
+<div class="screen">
+
+  <p class="instruction">play lagunya yapyapyap</p>
+
+  <div class="player">
+    <img src="her.jpg" class="cover">
+
+    <div class="info">
+      <p class="title">Am i bothering you?</p>
+      <p class="artist">Reality club</p>
+
+      <input type="range" id="bar" value="0">
+
+      <div class="time">
+        <span id="current">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+
+      <div class="controls">
+        <button id="back">-10</button>
+        <button id="play">play</button>
+        <button id="next">+10</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="confess hidden">
+    <img src="bouquet.png" class="bouquet">
+    <p class="small">i’ve been wanting to tell you this</p>
+    <h1 class="question">may i be your boyfriend?</h1>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

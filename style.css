@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(180deg, #ffe4f0, #fff7fb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.screen {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  padding: 20px;
+}
+
+.instruction {
+  font-weight: 700;
+  color: #ff5fa2;
+  background: rgba(255,159,203,.25);
+  padding: 8px 16px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+.player {
+  display: flex;
+  gap: 14px;
+  background: white;
+  padding: 14px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0,0,0,.15);
+  animation: up .8s ease;
+}
+
+@keyframes up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.cover {
+  width: 90px;
+  height: 90px;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+.info {
+  text-align: left;
+  flex: 1;
+}
+
+.title {
+  font-weight: 700;
+}
+
+.artist {
+  font-size: 12px;
+  color: #777;
+}
+
+input[type=range] {
+  width: 100%;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #999;
+}
+
+.controls {
+  margin-top: 8px;
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  border: none;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: #ff7eb3;
+  color: white;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+/* confess animation diperlambat */
+.confess {
+  margin-top: 26px;
+  animation: fadeSlow 2.1s ease forwards;
+}
+
+@keyframes fadeSlow {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.bouquet {
+  width: 220px;
+  margin-bottom: 10px;
+}
+
+.small {
+  font-size: 13px;
+  color: #999;
+  margin-bottom: 6px;
+}
+
+.question {
+  font-size: 20px;
+  color: #ff5fa2;
+}
